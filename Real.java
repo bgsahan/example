@@ -32,7 +32,7 @@ public class Singleton{
     fileOutputStream.close();
    }
   catch(java.io.IOException e){
-    Toast.makeText(this, e.getMessage(), Toast.Length.SHORT).show();
+    Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
    }
   }
   
