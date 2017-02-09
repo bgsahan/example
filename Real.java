@@ -25,16 +25,15 @@ public class Singleton{
  //WRITE FILE
  private final String FILENAME = "testfile.txt";
   
- public void writeFile(){
+ public void writeFile(ArrayList<Projekt> arrayList){
   try{
-   
-   
+    FileOutputStream fileOutputStream = getActivity().openFileOutput(FILENAME, Context.PRIVATE_CONTEXT);
+    fileOutputStream.write(....);
+    fileOutputStream.close();
    }
-  catch{
-   
+  catch(java.io.IOException e){
+    Toast.makeText(this, e.getMessage(), Toast.Length.SHORT).show();
    }
-  
-  
   }
   
     
