@@ -22,30 +22,37 @@ public class Singleton{
     }
  
  
- //WRITE FILE
+ //WRITE FILE. Problem: Context: Activity? get.Activity?
  private final String FILENAME = "testfile.txt";
+ ArrayList<Project> projectArrayList;
   
  public void writeFile(ArrayList<Projekt> arrayList){
   try{
     FileOutputStream fileOutputStream = getActivity().openFileOutput(FILENAME, Context.PRIVATE_CONTEXT);
-    fileOutputStream.write(....);
-    fileOutputStream.close();
+    ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+    objectOutputStream.writeInt(projectArrayList.size());
+    for(Projekt p:projektArrayList)
+      objectOutStream.writeObject(r);
+    objectOutStream.close();
    }
   catch(java.io.IOException e){
     Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
    }
   }
   
+  
+//READ FILE
+public ArrayList<Project> readFile(){
+  FileInputStream fileInputStream = openFileInput(FILENAME);
+  ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+  projectArrayList = (ArrayList<Projekt> objectInputStream.readObject();                  
+  
+  
+  
+  }
+  
+  
+  
     
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
 }
