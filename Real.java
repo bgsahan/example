@@ -1,5 +1,5 @@
+//SINGLETON
 public class Singleton{
- 
   private static Singleton mInstance = null;
   private String mExample;
   
@@ -20,6 +20,22 @@ public class Singleton{
   public String setExample(String value){
     mExample = value;
     }
+ 
+ 
+ //WRITE FILE
+ private final String FILENAME = "testfile.txt";
+  
+ public void writeFile(){
+  try{
+   
+   
+   }
+  catch{
+   
+   }
+  
+  
+  }
   
     
   
