@@ -3,6 +3,8 @@ public class Singleton{
   private static Singleton mInstance = null;
   private String mExample;
   
+  //DENEME
+  
   private Singleton(){
     }
   
