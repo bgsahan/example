@@ -1,6 +1,7 @@
 public class MainActivity extends AppCompatActivity implements View.OnClickViewListener {
 
   Button button;
+  EditText mEditText;
   //REALITY
 
   @Override
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickViewL
     setSupportActionBar(toolbar);
     
     button = (Button) findViewById(R.id.button);
+    mEditText = (EditText) findViewById(R.id.edit_text);
     
     button.setOnClickListener(this);
     
@@ -19,10 +21,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickViewL
   
   @Override
   public void onClick(View view) {
+    //revised conditional
     if(view.getId() == R.id.button) {
-      Toast.makeText(getActivty(), "Hello", Toast.LENGTH_SHORT).show();
+      String tempText = mEditText.getString().toString();
+      Toast.makeText(getActivty(), tempText, Toast.LENGTH_SHORT).show();
     }
   }
+  
+  
 }
     
     
