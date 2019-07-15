@@ -1,0 +1,31 @@
+
+
+01.07.2019
+
+RecycleView
+
+
+02.07.2019
+
+Room Library
+
+
+12.07.2019
+
+LiveData with Room needed to make background queries automatically. So LiveData added.
+
+Room Database and RecyclerView & Adapter connections are made for MainActivity Project Title list.
+
+
+14.07.2019
+
+Implemented OnClick method inside ViewHolder class using Intent and getAdapterPosition() to know which item is clicked.
+
+
+
+TODO
+
+Make the main project list singleton to reach its positions inside recycler adaper easier
+
+Create ProjectActivity.java to receive intenrs from MainActivity and extract their Extra info incoming intents for finding which prohect using its position.
+
