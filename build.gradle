@@ -1,0 +1,8 @@
+…
+// Room
+implementation “android.arch.persistence.room:runtime:x.x.x”
+annotationProcessor “android.arch.persistence.room:compiler:x.x.x”
+
+implementation "android.arch.lifecycle.extension:x.x.x"
+annotationProcessor “android.arch.lifecycle:compiler:x.x.x”
+
