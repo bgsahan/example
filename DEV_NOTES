@@ -21,11 +21,14 @@ Room Database and RecyclerView & Adapter connections are made for MainActivity P
 
 Implemented OnClick method inside ViewHolder class using Intent and getAdapterPosition() to know which item is clicked.
 
+15.07.2019
+> Created the Singleton class for ProjectList
+
 
 
 TODO
 
-Make the main project list singleton to reach its positions inside recycler adaper easier
+Chsnge the other classes according to the Singleton. the main project list singleton to reach its positions inside recycler adaper easier
 
 Create ProjectActivity.java to receive intenrs from MainActivity and extract their Extra info incoming intents for finding which prohect using its position.
 
