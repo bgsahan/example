@@ -24,6 +24,10 @@ Implemented OnClick method inside ViewHolder class using Intent and getAdapterPo
 15.07.2019
 > Created the Singleton class for ProjectList
 
+20.07.2019
+> Added Singleton in MainActivity
+> Revised LinkedList into ArrayList. is it good or bad?
+
 
 
 TODO
