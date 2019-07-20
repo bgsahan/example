@@ -1,6 +1,6 @@
 public class ProjectRecyclerAdapter extends RecyclerView.Adapter<ProjectRecyclerAdapter.ProjectRecyclerViewHolder> {
 
-   private final LinkedList<Project> mProjectList;
+   private final ArrayList<Project> mProjectList;
    private final LayoutInflater mInflater;
 
 
@@ -46,7 +46,7 @@ public class ProjectRecyclerAdapter extends RecyclerView.Adapter<ProjectRecycler
    }
 
 
-   public ProjectRecyclerAdapter(Context context, LinkedList<Project> projectList) {
+   public ProjectRecyclerAdapter(Context context, ArrayList<Project> projectList) {
 
        mInflater = LayoutInflater.from(context);
 
