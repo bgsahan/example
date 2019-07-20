@@ -46,6 +46,8 @@ public class MainActivity extends Activity {
        singleton.setProjectList(projectList);
        mAdapter.mProjectList = singleton.getProjectList();
        mAdapter.notifyDatasetChanged();
+      //Comment: maybe we should take the 2 lines above out of this method inyo onCreate? Because we are doing 2 things here. but notifOnDataSetChanged would work then?
+      
      }
 
    });
