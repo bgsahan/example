@@ -31,9 +31,10 @@ Implemented OnClick method inside ViewHolder class using Intent and getAdapterPo
 28.07.2018
 > I belive the code below indide MainActivity.jsva is unnecessary since we already do the same eork ehen calling adapter constructir
 mAdapter.mProjectList = singleton.getProjectList(); //why is this needed?
-
+> Created ProjectActivity.java class
+> Changed ProjectRecyclerAdapter class name to MainRecyclerAdapter
 
 TODO
-
-Create ProjectActivity.java to receive intenrs from MainActivity and extract their Extra info incoming intents for finding which prohect using its position.
+- Add recyclerview to ProjectActivity.java
+- Connect Room Database to ProjectActivity.hava to fetch data using intent Extra. extract their Extra info incoming intents for finding which prohect using its position.
 
