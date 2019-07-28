@@ -2,7 +2,7 @@ public class MainActivity extends Activity {
 
  //RecyclerView declarations
  private RecyclerView mRecyclerView;
- private ProjectRecyclerAdapter mProjectRecyclerAdapter;
+ private MainRecyclerAdapter mMainRecyclerAdapter;
  //private final ArrayList<String> mProjectList = new ArrayList<Project>();
 
  //Room Database declarations
@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
    mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
 
    // Create an RecyclerView adapter and supply the data to be displayed.
-   mAdapter = new ProjectRecyclerAdapter(this, singleton.getProjectList());
+   mAdapter = new MainRecyclerAdapter(this, singleton.getProjectList());
 
    // Connect the adapter with the recycler view.
    mRecyclerView.setAdapter(mAdapter);
