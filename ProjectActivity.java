@@ -8,7 +8,7 @@ public class ProjectActivity extends Activity {
     setContentView(R.layout.project_activity_layout);
     
     Intent incomingIntent = getIntent();
-    projectId = incomingIntent.getIntExtra(MainRecyclerViewAdapter.EXTRA_PROJECT_ID);
+    projectId = incomingIntent.getIntExtra(MainRecyclerAdapter.EXTRA_PROJECT_ID);
     
     //TODO: Check related project id from Room Database and bring related data. Singleton should be used?
     
