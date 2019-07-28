@@ -15,6 +15,9 @@ public class MainActivity extends Activity {
    super.onCreate(savedInstanceState);
    setContentView(R.layout.main_activity_layout);
   
+   //Room Database initialising & building
+   mProjectDatabase = Room.databaseBuilder(getApplicationContext(), ProjectDatabase.class, "PROJECT_DATABASE").build();
+
    //Custom method for loading all Room Database projects using LiveData
    loadAllProjects();
    
@@ -22,9 +25,6 @@ public class MainActivity extends Activity {
 
    // Create an RecyclerView adapter and supply the data to be displayed.
    mAdapter = new ProjectRecyclerAdapter(this, singleton.getProjectList());
-
-   //Room Database initialising & building
-   mProjectDatabase = Room.databaseBuilder(getApplicationContext(), ProjectDatabase.class, "PROJECT_DATABASE").build();
 
    // Connect the adapter with the recycler view.
    mRecyclerView.setAdapter(mAdapter);
@@ -44,8 +44,8 @@ public class MainActivity extends Activity {
      @Override
      public void onChanged(@Nullable List<Project> projectList) {
        singleton.setProjectList(projectList);
-       mAdapter.mProjectList = singleton.getProjectList();
-       mAdapter.notifyDatasetChanged();
+       mAdapter.mProjectList = singleton.getProjectList(); //why is this needed?
+       mAdapter.notifyDatasetChanged();
       //Comment: maybe we should take the 2 lines above out of this method inyo onCreate? Because we are doing 2 things here. but notifOnDataSetChanged would work then?
       
      }
