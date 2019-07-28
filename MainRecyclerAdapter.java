@@ -1,19 +1,19 @@
-public class ProjectRecyclerAdapter extends RecyclerView.Adapter<ProjectRecyclerAdapter.ProjectRecyclerViewHolder> {
+public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapter.MainRecyclerViewHolder> {
 
    private final ArrayList<Project> mProjectList;
    private final LayoutInflater mInflater;
    
    private static final int EXTRA_PROJECT_ID;
 
-   class ProjectRecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+   class MainRecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
 
        public final TextView projectItemView;
 
-       final ProjectRecyclerAdapter mAdapter;
+       final MainRecyclerAdapter mAdapter;
 
 
-       public ProjectRecyclerViewHolder(View itemView, ProjectRecyclerAdapter adapter) {
+       public MainRecyclerViewHolder(View itemView, MainRecyclerAdapter adapter) {
 
            super(itemView);
 
@@ -47,7 +47,7 @@ public class ProjectRecyclerAdapter extends RecyclerView.Adapter<ProjectRecycler
    }
 
 
-   public ProjectRecyclerAdapter(Context context, ArrayList<Project> projectList) {
+   public MainRecyclerAdapter(Context context, ArrayList<Project> projectList) {
 
        mInflater = LayoutInflater.from(context);
 
@@ -58,20 +58,20 @@ public class ProjectRecyclerAdapter extends RecyclerView.Adapter<ProjectRecycler
 
    @Override
 
-   public ProjectRecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+   public MainRecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
        // Inflate an item view.
 
        View mItemView = mInflater.inflate(R.layout.projrctlist_item, parent, false);
 
-       return new ProjectRecycleriewHolder(mItemView, this);
+       return new MainRecycleriewHolder(mItemView, this);
 
    }
 
 
    @Override
 
-   public void onBindViewHolder(ProjectRecyclerViewHolder viewHolder, int position) {
+   public void onBindViewHolder(MainRecyclerViewHolder viewHolder, int position) {
 
        // Retrieve the data for that position.
 
