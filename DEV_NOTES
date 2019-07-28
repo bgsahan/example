@@ -35,6 +35,9 @@ mAdapter.mProjectList = singleton.getProjectList(); //why is this needed?
 > Changed ProjectRecyclerAdapter class name to MainRecyclerAdapter
 
 TODO
+- Implement adding project inside MainActivity
+- Implement deleting project inside MainActivity using AlertDialog confirmatiom
+- Add toolbar and settings menuitem.
 - Add recyclerview to ProjectActivity.java
 - Connect Room Database to ProjectActivity.hava to fetch data using intent Extra. extract their Extra info incoming intents for finding which prohect using its position.
 
