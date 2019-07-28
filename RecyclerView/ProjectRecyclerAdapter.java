@@ -2,7 +2,8 @@ public class ProjectRecyclerAdapter extends RecyclerView.Adapter<ProjectRecycler
 
    private final ArrayList<Project> mProjectList;
    private final LayoutInflater mInflater;
-
+   
+   private static final int EXTRA_PROJECT_ID;
 
    class ProjectRecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
@@ -33,7 +34,7 @@ public class ProjectRecyclerAdapter extends RecyclerView.Adapter<ProjectRecycler
 
            Intent intent = new Intent(getActivity(), ProjectActivity.class);
 
-           intent.putExtra("project_id", getAdapterPosition());
+           intent.putExtra(EXTRA_PROJECT_ID, getAdapterPosition());
 
            startActivity(intent);
 
